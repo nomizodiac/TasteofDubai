@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:id="@+id/restaurantsBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/restaurants_banner" />
+
+    <ImageView
+        android:id="@+id/mapImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/map"
+        android:layout_below="@+id/restaurantsBanner"
+        android:layout_marginTop="35dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/mapHeadingLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/map"
+        android:textColor="@color/colorOrangeTheme"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mapImg"
+        android:layout_marginTop="20dp"
+        android:textSize="27sp" />
+
+</RelativeLayout>

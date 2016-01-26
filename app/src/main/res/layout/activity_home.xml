@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90">
+
+        <RelativeLayout
+            android:id="@+id/fragmentsContainerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/menuShortcutLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorOrangeTheme"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/scheduleBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/calander_faded"
+                android:gravity="center_horizontal"
+                android:text="@string/schedule"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:paddingTop="@dimen/menu_shortcut_layout_item_padding_top"
+                android:paddingBottom="@dimen/menu_shortcut_layout_item_padding_bottom" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/chefsBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/chef_faded"
+                android:gravity="center_horizontal"
+                android:text="@string/chefs"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:paddingTop="@dimen/menu_shortcut_layout_item_padding_top"
+                android:paddingBottom="@dimen/menu_shortcut_layout_item_padding_bottom" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/restaurantsBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/resturant_faded"
+                android:gravity="center_horizontal"
+                android:text="@string/restaurants"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:paddingTop="@dimen/menu_shortcut_layout_item_padding_top"
+                android:paddingBottom="@dimen/menu_shortcut_layout_item_padding_bottom" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/venueMapBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/map_faded"
+                android:gravity="center_horizontal"
+                android:text="@string/venue_map"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:paddingTop="@dimen/menu_shortcut_layout_item_padding_top"
+                android:paddingBottom="@dimen/menu_shortcut_layout_item_padding_bottom" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@drawable/greybar">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_margin_left"
+            android:background="@drawable/back_button"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/menuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#0000"
+            android:src="@drawable/menu" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/orange_bar_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorOrangeTheme">
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

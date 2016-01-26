@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:id="@+id/chefsBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/chef_banner" />
+
+    <TextView
+        android:id="@+id/chefsHeadingLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/chefsBanner"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/chef_detail_icon"
+        android:gravity="center"
+        android:text="@string/chefs"
+        android:textColor="@color/colorOrangeTheme"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/chefsDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chefsHeadingLbl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:text="@string/chefs_description"
+        android:textColor="@color/colorOrangeTheme"
+        android:textSize="14sp" />
+
+</RelativeLayout>

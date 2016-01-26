@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/connectionLostLayout">
+
+    <TextView
+        android:id="@+id/connectionLostTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:text="@string/internet_connection_lost"
+        android:textColor="@color/colorOrangeTheme"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/section_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:layout_below="@+id/connectionLostTextView"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:text="@string/tap_to_retry"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
